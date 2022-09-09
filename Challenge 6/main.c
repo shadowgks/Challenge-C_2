@@ -9,6 +9,7 @@ int main()
     printf("\n");
 
     char N[4],NC[4];
+    int count = 0;
     printf("Enter Le 4 caractere: ");
     scanf("%s",N);
     printf("Enter Le 4 De Comparaison caractere: ");
@@ -16,7 +17,7 @@ int main()
 
 
 
-    int count = 1;
+
     for(int i=0; i<4; i++){
         for(int j=0; j<4; j++){
             if(N[i] == NC[j]){
@@ -26,10 +27,10 @@ int main()
         }
     }
 
-    if(count == 4){
-        printf("les mêmes lettres avec la même quantité");
+    if(count == 3){
+        printf("les mêmes lettres!");
     }else{
-        printf("Faild");
+        printf("Faild!");
     }
 
 
