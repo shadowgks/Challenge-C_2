@@ -8,7 +8,7 @@ int main()
     printf("###############################\n");
     printf("\n");
 
-    char N[4],NC[4];
+    char N[5],NC[5];
     int count = 0;
     printf("Enter Le 4 caractere: ");
     scanf("%s",N);
@@ -27,7 +27,7 @@ int main()
         }
     }
 
-    if(count == 3){
+    if(count == 4){
         printf("les mêmes lettres!");
     }else{
         printf("Faild!");

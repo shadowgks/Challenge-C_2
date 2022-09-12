@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-int N;
+
 bool isPremier(N){
     int i;
     int estPremier = 1;
@@ -17,6 +17,7 @@ bool isPremier(N){
 }
 int main()
 {
+    int N;
     printf("Entre Le Numbre: ");
     scanf("%d",&N);
 

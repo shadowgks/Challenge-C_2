@@ -2,13 +2,15 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-
 int divededby(a,b){
     return a/b;
 }
 bool isPremier(N){
     int i;
     bool estPremier = true;
+    if(N <= 1){
+       estPremier = false;
+    }
     for(i=2; i<=N/2; i++){
         if(N%i == 0){
             //Faux
@@ -18,7 +20,6 @@ bool isPremier(N){
     }
     //Return Value 1 or 0
     return estPremier;
-
 }
 int main()
 {
@@ -28,6 +29,7 @@ int main()
     printf("Entre le numbre B: ");
     scanf("%d",&b);
 
+    //Check Func Premier or Not
     if(isPremier(divededby(a,b))== false){
         printf("Le Numbre Non Premier");
     }else{
